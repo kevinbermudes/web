@@ -15,11 +15,9 @@
         line-height: 1.6;
     }
     .carta {
-        max-width: 600px;
+        max-width: 450px; /* Ancho más angosto */
         margin: 0 auto;
-        padding-right: 20px;
-         padding-right: 4%;
-         
+        padding: 0 10px; /* Ajuste de padding para que no se corte en pantallas pequeñas */
     }
     .button {
         text-align: center;
@@ -35,6 +33,21 @@
         border: none;
         border-radius: 5px;
         color: aliceblue;
+    }
+
+    /* Media query para pantallas más pequeñas (móviles) */
+    @media (max-width: 600px) {
+        body {
+            margin: 10px;
+        }
+        .carta {
+            max-width: 100%;
+            padding: 10px;
+        }
+        .button button {
+            width: 100%;
+            padding: 15px;
+        }
     }
 </style>
 </head>
@@ -55,9 +68,7 @@
         <p>Kevin Bermudez.</p>
     </div>
 <div class="button">
-    <div class="button">
-        <button onclick="location.href='FLORES.html'">haz clic Clic</button>
-    </div>
+    <button onclick="location.href='FLORES.html'">Haz clic aquí</button>
 </div>
 </body>
 </html>
