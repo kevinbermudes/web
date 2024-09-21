@@ -5,6 +5,16 @@
   margin: 0;
   box-sizing: border-box;
 }
+.imagen-superior {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;          
+  max-width: 100%;      
+  height: 30%;         
+  z-index: 9999;        
+}
 
 :root {
   --dark-color: #000;

@@ -14,10 +14,10 @@
         <span>H</span>
         <span>O</span>
         <span>L</span>
-        <span>A &nbsp</span> 
+        <span>A &nbsp;</span> 
         <span>M</span>
         <span>I</span>
-        <P></P>
+        <p></p>
         <span>C</span>
         <span>U</span>
         <span>L</span>
@@ -26,6 +26,12 @@
         <span>A</span>
     </div>
     <div class="greetings">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
         <span></span>
         <span></span>
         <span></span>
@@ -42,5 +48,15 @@
         </button>
         
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const greetings = document.querySelector('.greetings');
+            const lastSpan = greetings.querySelector('span:last-child');
+    
+            lastSpan.addEventListener('animationend', function() {
+                greetings.classList.add('all-glow');
+            });
+        });
+    </script>
 </body>
 </html>
