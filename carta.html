@@ -7,49 +7,61 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/flowers.png" type="image/x-icon">
     <title>FLORES</title>
-</head>
-<style>
-    body {
-        margin: 20px;
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-    }
-    .carta {
-        max-width: 450px; /* Ancho más angosto */
-        margin: 0 auto;
-        padding: 0 10px; /* Ajuste de padding para que no se corte en pantallas pequeñas */
-    }
-    .button {
-        text-align: center;
-        margin-top: 30px;
-    }
-    .button a {
-        text-decoration: none;
-        color: white;
-    }
-    .button button {
-        background-color: #e272c6;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        color: aliceblue;
-    }
-
-    /* Media query para pantallas más pequeñas (móviles) */
-    @media (max-width: 600px) {
+    <style>
+        /* Estilos básicos para el cuerpo */
         body {
-            margin: 10px;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Asegura que todo el contenido esté centrado verticalmente */
+            background-color: #f9f9f9;
         }
+
+        /* Estilos para la carta */
         .carta {
             max-width: 100%;
-            padding: 10px;
+            width: 90%;
+            max-width: 450px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffb3b3; /* Color de fondo ajustado */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow-y: auto; /* Para evitar que se corte el contenido */
         }
+
+        /* Estilos para el botón */
+        .button {
+            text-align: center;
+            margin-top: 30px;
+        }
+
         .button button {
-            width: 100%;
-            padding: 15px;
+            background-color: #e272c6;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
         }
-    }
-</style>
+
+        /* Media query para pantallas más pequeñas */
+        @media (max-width: 600px) {
+            .carta {
+                padding: 15px;
+                width: 95%;
+            }
+            .button button {
+                width: 100%;
+                padding: 12px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="carta">
@@ -67,8 +79,8 @@
         
         <p>Kevin Bermudez.</p>
     </div>
-<div class="button">
-    <button onclick="location.href='FLORES.html'">Haz clic aquí</button>
-</div>
+    <div class="button">
+        <button onclick="location.href='FLORES.html'">Haz clic aquí</button>
+    </div>
 </body>
 </html>
